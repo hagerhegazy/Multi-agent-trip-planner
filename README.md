@@ -2,7 +2,7 @@
 
 > Describe a trip in one sentence. Seven AI agents research flights, hotels, activities and weather **in parallel**, a budget agent crunches the costs and drives an **Excel MCP server** to build the spreadsheet and chart, and a final agent writes your plan.
 
-![demo](https://lnkd.in/p/eeU-S77d)
+[demo](https://lnkd.in/p/eeU-S77d)
 
 *"7 days in Istanbul in October, 3 people, mid-range, love history and food. Flying from Cairo."* → day-by-day itinerary, flight and hotel picks, a budget table, an Excel file and a chart.
 
