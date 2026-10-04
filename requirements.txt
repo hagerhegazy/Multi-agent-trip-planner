@@ -1,0 +1,15 @@
+langgraph
+langchain-groq
+langchain-core
+langchain-openai
+langchain-mcp-adapters
+python-dotenv
+ddgs
+streamlit
+mcp
+pandas
+openpyxl
+numpy
+langchain 
+streamlit 
+matplotlib
