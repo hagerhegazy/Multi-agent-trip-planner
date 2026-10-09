@@ -81,6 +81,37 @@ streamlit run app.py
 
 Or from the terminal: `python main.py "5 days in Rome in November, 2 people, love food"`
 
+
+## 🐳 Run with Docker
+
+### Build the image
+
+From the project root:
+
+```bash
+docker build -t multi-agent-trip-planner .
+```
+
+### Configure environment variables
+
+Create a `.env` file locally containing your required credentials:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=openai/gpt-oss-120b
+```
+
+Do not commit `.env` or expose API keys in the repository.
+
+### Run the container
+
+```bash
+docker run --env-file .env -p 8501:8501 multi-agent-trip-planner
+```
+
+Open [http://localhost:8501](http://localhost:8501) in your browser.
+
+
 ## How the MCP connection works
 
 `mcp_client.py` launches `MCP/task_server.py` as a subprocess over stdio and loads its `run_excel_code` tool. Only the **budget agent** receives that tool: it writes the pandas/openpyxl code for the workbook and the matplotlib code for the chart, and the MCP server executes it safely in its own process. The rest of the system never touches the MCP.
