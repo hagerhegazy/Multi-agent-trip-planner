@@ -1,0 +1,8 @@
+.venv
+MCP/.venv
+MCP/.env
+.env
+.git
+__pycache__
+charts
+trip_budget.xlsx
